@@ -1,6 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+// next.config.js（Next.js 支持的 CommonJS 格式）
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: false,
   images: {
     remotePatterns: [
@@ -20,4 +20,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
